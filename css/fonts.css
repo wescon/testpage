@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Avenir_lt";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Avenir_lt/Avenir_lt.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir_lt/Avenir_lt.woff") format("woff"), url("../fonts/Avenir_lt/Avenir_lt.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Big_John";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Big_John/Big_John.eot?#iefix") format("embedded-opentype"), url("../fonts/Big_John/Big_John.woff") format("woff"), url("../fonts/Big_John/Big_John.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Slim_Joe";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Slim_Joe/Slim_Joe.eot?#iefix") format("embedded-opentype"), url("../fonts/Slim_Joe/Slim_Joe.woff") format("woff"), url("../fonts/Slim_Joe/Slim_Joe.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Amble_bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Amble/Amble_bold/Amble_bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Amble/Amble_bold/Amble_bold.woff") format("woff"), url("../fonts/Amble/Amble_bold/Amble_bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Amble_regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Amble/Amble_regular/Amble_regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Amble/Amble_regular/Amble_regular.woff") format("woff"), url("../fonts/Amble/Amble_regular/Amble_regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Amble_light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Amble/Amble_light/Amble_light.eot?#iefix") format("embedded-opentype"), url("../fonts/Amble/Amble_light/Amble_light.woff") format("woff"), url("../fonts/Amble/Amble_light/Amble_light.ttf") format("truetype");
+}
