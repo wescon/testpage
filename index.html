@@ -5,11 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Casablanca</title>
-
-		<!-- Bootstrap -->
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/fonts.css" rel="stylesheet">
+		<link href="css/media.css" rel="stylesheet">
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -18,22 +17,38 @@
 		<![endif]-->
 	</head>
 	<body>
-		<div class="header bg">
-			<div class="header__menu"><a href="#"><img src="img/menu_ic.png" alt="menu_ic" height="24" width="30" ></a></div>
+		<!--HEADER IN !-->
+		<div id="header" class="bg">
 			<div class="container">
 				<div class="row">
+					<a class="back-top" href="#header"></a>
 					<div class="col-md-12">
-						<h1 class="header__h1">We’ve got the talent</h1>
+						<div class="navbar navbar-default">
+							<div class="navbar-header">
+								<a class="navbar-brand" href="#"></a>
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+
+								</button>
+							</div>
+							<div class="collapse navbar-collapse" id="responsive-menu">
+								<ul class="nav navbar-nav">
+									<li><a href="#header">Home</a></li>
+									<li><a href="#work">Work</a></li>
+									<li><a href="#about-us">About us</a></li>
+									<li><a href="#choose-us">Choose us</a></li>
+									<li><a href="#contact">Contacts</a></li>
+								</ul>
+							</div>
+						</div>
+						<h1  class="header__h1">We’ve got the talent</h1>
 						<div class="arrow-white"></div>
 						<p class="header__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<br/>
 							Aenean commodo ligula eget dolor. Aenean massa.</p>
-
 					</div>
 				</div>
 			</div>
-			<div class="mouse-scroll"><a href="#"><i><img src="img/mouse_scroll_ic.png"></i></a></div>
 		</div>
-
+		<!--INTRODUCTION IN !-->
 		<div class="introduction">
 			<div class="container">
 				<div class="row">
@@ -48,7 +63,7 @@
 				</div>
 			</div>
 		</div>
-
+		<!--CREATIVITY IN !-->
 		<div class="creativity repeat-block">
 			<div class="container">
 				<div class="row">
@@ -60,13 +75,13 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="work">
+		<!--WORK IN !-->
+		<div id="work">
 			<h3 class="block-name">some of our work</h3>
 			<div class="arrow-black"></div>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sx-12">
+					<div class="col-md-12  col-sm-12 col-sx-12">
 							<nav class="work__sort">
 								<ul>
 									<li><a  class="active" href="#">All</a></li>
@@ -78,7 +93,6 @@
 							</nav>
 					</div>
 				</div>
-				
 				<div class="work_group-item">
 					<div class="row">
 						<div class="work__item">
@@ -91,7 +105,6 @@
 							<div class="col-md-4 col-sm-4 col-xs-6"><a href="#"><img src="img/work_item6.jpg" alt="work_item"></a></div>
 						</div>
 					</div>
-
 					<div class="row">
 						<div class="col-md-4 col-md-offset-4">
 							<div class="btn-black">
@@ -103,7 +116,7 @@
 				</div>
 			</div>
 		</div>
-
+		<!--HELP IN !-->
 		<div class="help repeat-block">
 			<div class="container">
 				<div class="row">
@@ -115,7 +128,7 @@
 				</div>
 			</div>
 		</div>
-
+		<!-- CLIENTS IN !-->
 		<div class="clients">
 			<h3 class="block-name">our clients</h3>
 			<div class="arrow-black"></div>
@@ -124,19 +137,19 @@
 					<div class="col-md-12">
 						<div class="clients__item ">
 							<ul>
-								<li><img src="img/google_logo.png" alt="" ></li>
-								<li><img src="img/Samsung_logo.png" alt="" ></li>
-								<li><img src="img/Flickr_logo.png" alt=""></li>
-								<li><img src="img/foursquare_logo.png" alt=""></li>
-								<li><img src="img/pinterest_logo.png" alt=""></li>
+								<li><img src="img/google_logo.png" alt="google" ></li>
+								<li><img src="img/Samsung_logo.png" alt="samsung" ></li>
+								<li><img src="img/Flickr_logo.png" alt="flickr"></li>
+								<li><img src="img/foursquare_logo.png" alt="foursquare"></li>
+								<li><img src="img/pinterest_logo.png" alt="pinterest"></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-			
-		<div class="about-us">
+		<!-- ABOUT-US IN !-->	
+		<div id="about-us">
 			<h3 class="block-name">About us</h3>
 			<div class="arrow-black"></div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
@@ -146,21 +159,15 @@
 			<div class="container">
 				<div class="about-us__item">
 					<div class="row">
-						<div class="col-md-3"><img src="img/photo1.jpg" alt="photo1"></div>
-						<div class="col-md-3"><img src="img/photo2.jpg" alt="photo1"></div>
-						<div class="col-md-3"><img src="img/photo3.jpg" alt="photo1"></div>
-						<div class="col-md-3">
-							<div class="about-us__item-apply">
-								<p class="about-us__item-text">We are hiring</p>
-								<div class="arrow-black-apply"></div>
-								<a href="#" class="about-us__item-button">Apply</a>
-							</div>
-						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12"><img src="img/photo1.jpg" alt="photo1"></div>
+						<div class="col-md-3 col-sm-6 col-xs-12"><img src="img/photo2.jpg" alt="photo2"></div>
+						<div class="col-md-3 col-sm-6 col-xs-12"><img src="img/photo3.jpg" alt="photo3"></div>
+						<div class="col-md-3 col-sm-6 col-xs-12"><img src="img/photo4.jpg" alt="photo3"></div>
 					</div>
-				</div>
+				</div> 
 			</div>
 		</div>
-
+		<!-- PLAY IN !-->
 		<div class="play repeat-block">
 			<div class="container">
 				<div class="row">
@@ -172,7 +179,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="choose-us">
+		<!-- CHOOSE US IN !-->
+		<div id="choose-us">
 			<div class="block-name">Why choose us</div>
 			<div class="arrow-black"></div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  veniam, quis</p>
@@ -180,98 +188,144 @@
 			<p>nostrud exercitation ullamco laboris.</p>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
-						<div class="choose-us__item">
-							<img src="img/iphone.png">
-							<p class="choose-us__item-title">App Design</p>
-							<p class="choose-us__item-text">Lorem ipsum dolor sit amet,
-							 consectetur adipisicing elit, sed do eiusmod tempor ilabore et dolore.</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="choose-us__item">
-							<img src="img/ipad.png">
-							<p class="choose-us__item-title">Responsive Layout</p>
-							<p class="choose-us__item-text">Lorem ipsum dolor sit amet,
-							 consectetur adipisicing elit, sed do eiusmod tempor ilabore et dolore.</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="choose-us__item">
-							<img src="img/mac.png">
-							<p class="choose-us__item-title">Pixel Perfect design</p>
-							<p class="choose-us__item-text">Lorem ipsum dolor sit amet,
-							 consectetur adipisicing elit, sed do eiusmod tempor ilabore et dolore.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="creativity repeat-block">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-md-offset-4">
-						<div class="btn">
-							<a href="#">Get a quote now.</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="touch">
-			<div class="block-name">get in touch</div>
-			<div class="arrow-black"></div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-			<p>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-			<p>exercitation ullamco laboris.</p>
-		</div>
-
-		<div class="contact">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="address">
-							<p class="address-title">Our Location</p>
-							<p class="address-text">174 Mimosa ST. NW</p>
-							<p>Casablanca, MA 20370</p>
-							<p>(212) 123 456 7</p>
-							<p>Samir Timezguida</p>
-						</div>
-					</div>
-					<div class="col-md-1">
-						<div class="bgbgbg"></div>
-					</div>
-					<div class="col-md-7">
-						<div class="form">
-							<form>
-								<div class="col-md-6"><input type="text" placeholder="Name"></div>
-								<div class="col-md-6"><input type="text" placeholder="Email"></div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="form-message">
-											<input type="text" placeholder="Message">
+					<div id="carousel" class="carousel slide">
+						<ol class="carousel-indicators">
+							<li class="active" data-target="#carousel" data-slide-to="0"></li>
+							<li data-target="#carousel" data-slide-to="1"></li>
+						</ol>
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="col-md-4">
+										<div class="choose-us__item">
+											<img src="img/iphone.png" alt="iphone">
+											<p class="choose-us__item-title">App Design</p>
+											<p class="choose-us__item-text">Lorem ipsum dolor sit amet,
+											 consectetur adipisicing elit, sed do eiusmod tempor ilabore et dolore.</p>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="choose-us__item">
+											<img src="img/ipad.png" alt="ipad">
+											<p class="choose-us__item-title">Responsive Layout</p>
+											<p class="choose-us__item-text">Lorem ipsum dolor sit amet,
+											 consectetur adipisicing elit, sed do eiusmod tempor ilabore et dolore.</p>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="choose-us__item">
+											<img src="img/mac.png" alt="mac">
+											<p class="choose-us__item-title">Pixel Perfect design</p>
+											<p class="choose-us__item-text">Lorem ipsum dolor sit amet,
+											 consectetur adipisicing elit, sed do eiusmod tempor ilabore et dolore.</p>
 										</div>
 									</div>
 								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="form__btn">
-											<input type="submit" value="Send">
+								<div class="item">
+										<div class="col-md-4">
+										<div class="choose-us__item">
+											<img src="img/iphone.png" alt="iphone">
+											<p class="choose-us__item-title">App Design</p>
+											<p class="choose-us__item-text">Lorem ipsum dolor sit amet,
+											 consectetur adipisicing elit, sed do eiusmod tempor ilabore et dolore.</p>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="choose-us__item">
+											<img src="img/ipad.png" alt="ipad">
+											<p class="choose-us__item-title">Responsive Layout</p>
+											<p class="choose-us__item-text">Lorem ipsum dolor sit amet,
+											 consectetur adipisicing elit, sed do eiusmod tempor ilabore et dolore.</p>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="choose-us__item">
+											<img src="img/mac.png" alt="mac">
+											<p class="choose-us__item-title">Pixel Perfect design</p>
+											<p class="choose-us__item-text">Lorem ipsum dolor sit amet,
+											 consectetur adipisicing elit, sed do eiusmod tempor ilabore et dolore.</p>
 										</div>
 									</div>
 								</div>
-							</form>
+							</div>
 						</div>
 					</div>
-				
 				</div>
 			</div>
-		</div>
-		
-
-	
-
+			<!-- QUOTE IN !-->
+			<div class="quote repeat-block">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4">
+							<div class="btn">
+								<a href="#">Get a quote now.</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- TOUCH IN !-->
+			<div class="touch">
+				<div class="block-name">get in touch</div>
+				<div class="arrow-black"></div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+				<p>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+				<p>exercitation ullamco laboris.</p>
+			</div>
+			<!-- CONTACT IN !-->
+			<div id="contact">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="address">
+								<p class="address-title">Our Location</p>
+								<p class="address-text">174 Mimosa ST. NW</p>
+								<p>Casablanca, MA 20370</p>
+								<p>(212) 123 456 7</p>
+								<p>Samir Timezguida</p>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="form">
+								<form>
+									<div class="col-md-6"><input type="text" placeholder="Name"></div>
+									<div class="col-md-6"><input type="text" placeholder="Email"></div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-message">
+												<input type="text" placeholder="Message">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form__btn">
+												<input type="submit" value="Send">
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- FOOTER IN !-->
+			<div class="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="footer__author">
+								<p>Alexandr Matyugin</p>
+								<p>Web developer</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- FOOTER END !-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/common.js"></script>
+	<script type="text/javascript" src="js/jquery.1.7.1.min.js"></script>
 	</body>
 </html>

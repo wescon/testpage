@@ -2,23 +2,25 @@ body
 	font-size: 22px
 	font-family: "Amble_light" , Helvetica , sans-serif
 	color: #222
-
 ul 
 	list-style-type:none
-
+	margin:0
+	padding:0
 h3
 	margin:0
+p
+	line-height:1.2
+	text-align: center
+
+/* ----- HEADER START -----*/
 
 .bg
 	max-width: 1600px
 	margin: 0 auto
-	
-.header
+
+#header
 	height: 900px
 	background: url(../img/Gradient-overlay.jpg) no-repeat
-
-.header__menu
-	padding: 50px 0 0 50px
 
 .header__h1
 	font-family: "Big_John"
@@ -27,7 +29,6 @@ h3
 	color: #fff
 	text-align: center
 	margin-top:235px
-
 
 .arrow-white
 	width: 86px
@@ -39,13 +40,6 @@ h3
 	color: #fffefe
 	font-weight: 400
 	text-align: center
-
-.mouse-scroll
-	position:absolute
-	left:50%
-	bottom:80px
-	width:30px
-	height: 48px
 
 .block-name
 	font-family: "Big_John"
@@ -61,6 +55,8 @@ h3
 	background-color: #222
 	margin: 75px auto
 
+/* ----- INTRODUCTION START -----*/
+
 .introduction__text
 	text-align: center
 	line-height:0.8
@@ -74,7 +70,7 @@ h3
 	margin:0 auto
 
 .creativity
-	background-image: url(../img/creativity_bg.jpg)
+	background-image: url(../img/repeat-block_set.jpg)
 
 .btn
 	a
@@ -87,11 +83,15 @@ h3
 		margin-top:200px
 		text-decoration: none
 
+
+/* ----- WORK START -----*/
+
 .work__sort
-	li
-		float:left
-		list-style-type: none
+	ul
 		text-align: center
+	li
+		display: inline-block
+		list-style-type: none
 		margin-right:35px
 	li:last-child
 		margin-right:0
@@ -100,21 +100,26 @@ h3
 		font-family: "Slim_Joe"
 		text-decoration: none
 		text-transform: uppercase
-		
 
-	
 
 .work__sort a.active
 	font-family: "Big_John"
 	color:#222
 
 .work_group-item
-	margin-top:85px
+	margin-top:25px
 
 .work__item
 	img
 		max-width: 100%
 		margin-bottom:20px
+		opacity:0.6
+		-webkit-transition: opacity 0.5s 
+		-moz-transition: opacity 0.5s 
+		-o-transition: opacity 0.5s
+		transition: opacity 0.5s
+	img:hover
+		opacity:1
 
 .arrow-orange
 	width: 48px
@@ -134,7 +139,10 @@ h3
 		text-align: center
 
 .help
-	background-image: url(../img/help_bg.jpg)
+	background-image: url(../img/repeat-block_set.jpg)
+	background-position: 0 -600px
+
+/* ----- CLIENTS START -----*/
 
 .clients
 	background-color: #f4f4f4
@@ -147,17 +155,21 @@ h3
 	img
 		max-width: 100%
 
-.about-us
-	p
-		text-align: center
-		line-height: 0.8
+/* ----- ABOUT-US START -----*/
 
 .about-us__item
 	margin: 65px 0 80px
-
-.about-us__item-apply
-	border:2px solid #222;
-	height:360px
+	img
+		max-width: 100%
+		opacity: 0.6	
+		-webkit-transition: opacity 0.5s 
+		-moz-transition: opacity 0.5s 
+		-o-transition: opacity 0.5s
+		transition: opacity 0.5s
+		
+	img:hover
+		opacity:1
+		max-width: 100%
 
 .about-us__item-text
 	width:130px
@@ -165,30 +177,11 @@ h3
 	font-size: 24px
 	font-family: "Big_John"
 	text-align: center
-	margin-top:95px
-
-.arrow-black-apply
-	width: 86px
-	height: 2px
-	background-color: #222
-	margin: 45px auto
-
-
-.about-us__item-button
-	text-align: center
-	display:block
-	width:180px
-	height:60px
-	border: 2px solid black
-	font-family: "Amble_bold"
-	font-size: 24px
-	margin:0 auto
-	padding-top:11px
-
+	margin-top:45px
 
 .play
-	background-image: url(../img/play_bg.jpg)
-
+	background-image: url(../img/repeat-block_set.jpg)
+	background-position: 0 -1200px
 
 .play
 	a
@@ -202,11 +195,7 @@ h3
 	text-align: center
 	margin-top:218px
 
-.choose-us
-	p
-		text-align: center
-		line-height: 0.8
-
+/* -----CHOOSE-US START -----*/
 
 .choose-us__item
 	text-align: center
@@ -214,10 +203,8 @@ h3
 	margin-top:100px
 	margin-bottom:60px
 
-
 .choose-us__item-title
 	font-size: 24px
-	
 	padding-top: 20px
 
 p.choose-us__item-text
@@ -225,10 +212,11 @@ p.choose-us__item-text
 	line-height: 1.8
 	padding: 0 10px
 
-.touch
-	p
-		text-align: center
-		line-height: 0.8
+.quote
+	background-image: url(../img/repeat-block_set.jpg)
+	background-position: 0 -1800px
+
+/* -----CONTACT START -----*/
 
 .address p.address-title
 	font-size: 24px
@@ -240,25 +228,19 @@ p.choose-us__item-text
 	p
 		font-style: italic
 		line-height: 1
+		text-align: left
 
 .address-text
 	padding-top: 20px
 
-.contact
+#contact
 	background-color: #f2f2f2
-	height:500px
+	min-height:380px
+	padding-bottom:120px
 	
 
 .form
-	background-color: #e4e4e4
-	height:500px
 	padding-top: 100px
-
-.bgbgbg
-	width:100%
-	height:500px
-	background-color: #e4e4e4
-
 
 input[type="text"]
 	border:none
@@ -286,3 +268,62 @@ input[type="text"]
 		font-family: "Amble_bold"
 		margin-top: 40px
 		margin-right:15px
+		background:none
+
+/* -----FOOTER START -----*/
+
+.footer
+	background-color: #222
+	
+.footer__author
+	margin-top: -30px
+	text-align: center
+	font-size: 20px
+	line-height:0.4
+	padding-top: 55px
+	font-style: italic
+	color:#fff
+	padding-bottom:10px
+
+/* -----SLIDER CUSTOMIZE -----*/
+
+.slide .carousel-indicators
+	li
+		width: 12px
+		height: 12px
+		background-color: #d5d5d5
+		margin: 0
+		border: none		
+
+.carousel-indicators
+	li.active
+		width: 12px
+		height: 12px
+		background-color: #f3793d
+		margin: 0
+
+/* ----- NAVIGATION CUSTOMIZE -----*/
+
+.nav.navbar-nav
+	li
+		padding-bottom:5px
+		a
+			color:#fff
+			font-family: "Amble_regular"
+			font-size: 18px
+			text-transform: uppercase
+			margin-left:20px
+			text-decoration: none
+
+/* -----BACK-TOP BUTTON -----*/
+
+.back-top
+	display:block
+	position:fixed
+	bottom:30px
+	right:20px
+	left: auto
+	z-index:999
+	width:50px
+	height:50px
+	background: url(../img/backtotop.png)
